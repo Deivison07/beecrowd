@@ -1,11 +1,13 @@
 while True:
     try:
         numero = input()
-        print(numero)
+
         if numero == '' or numero ==  ' ': 
             print('error')
-            
+            continue
+
         if 'O' in numero or 'o' in numero:
+            print('tem aqui')
             numero = numero.replace('o','0')
             numero = numero.replace('O','0')
         if 'l' in numero:
